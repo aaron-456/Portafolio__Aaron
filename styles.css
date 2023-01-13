@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+:root {
+    --color__grey:#ADADAD;
+    --color__black:#020403;
+    --color__text:#EB455F;
+    --color__white:#FFFFFF;
+    --color__body: #3C6255;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #3C6255;
+        max-width: 1070px;
+        margin: 0 auto;
+        min-width: 350px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    
+
+
+.menu_theicon img {
+    border-radius: 0.8rem;
+}
+
+.menu_theicon{
+    position: relative;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: start;
+}
+
+.menu_theicon img {
+    width: 40px;
+    cursor: pointer;
+    background-color:var(--color__white);
+    position: fixed;
+}
+
+.boxx__menu {
+    background-color:var(--color__body);
+    min-width: 50%;
+    height: 100vh;
+    position: fixed;
+    transition: transform 0.5s;
+    z-index: 999;
+    border-radius: 2rem;
+    border: 2px solid var(--color__black);
+    
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+
+   
+    
+    
+}
+
+.on {
+    transform: translateX(-300%);
+}
+
+
+
+.boxx__menu ul {
+    list-style: none; 
+} 
+
+.boxx__menu ul li {
+    text-decoration: none;
+    margin: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.boxx__menu ul li a {
+    text-decoration: none;
+    color: var(--greyoscuro);
+    font-size: 1.5rem;
+   
+}
+
+
+.tex_paragr {
+    color: #FFF6BF;
+    font-size: 18px;
+}
+
+
+.header__info > img {
+    margin-top: 3rem; 
+}
+
+.tittle {
+    color: var(--color__white);
+}
+
+.title__bio {
+    color: var(--color__white);
+}
+
+.sub__tittle {
+    color: var(--color__grey);
+}
+.header__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: var(--color__grey);
+}
+
+.social__icon a img {
+    background-color:#020403;
+    border-radius: 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+
+.bio__info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+.image_person {
+    border: 1px solid #020403;
+    padding: 1rem;
+    border-radius: 10rem;
+}
+
+.mi__if,
+.habilies__my,
+.my__projects {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color__white);
+    gap: 1rem;
+    margin: 80px;
+    padding-bottom: 1rem;
+}
+
+.habilitis__im img {
+    background-color:#020403;
+    border-radius: 1rem;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.img__projet {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    cursor: pointer;
+    width: 300px;
+
+}
+
+.img__projet img  {
+    border: 0.3rem solid var(--color__white);
+    padding: 3px;
+    animation-timeline: 12;
+
+}
+
+.portfolio__img{
+    display: grid;
+}
+
+.habilitis__im {
+    display: grid;
+}
+
+.habilies__my img {
+    justify-self: center;
+}
+
+.social__icon {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.mi__if p {
+    color: var(--color__grey);
+    margin-bottom: 2rem;
+}
+
+.your_ex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    gap: 1rem;
+    color: var(--color__white);
+    
+}
+
+.your_ex {
+    margin-top: 2rem;
+}
+
+.your_ex h4 {
+    color: var(--color__white);
+}
+
+
+.your_ex > h6 {
+    grid-column: 2 / 3;
+}
+
+.your_ex > h4 {
+    grid-column: 2 / 3;
+}
+
+.your_ex h2 {
+    grid-column: 1 / 3;
+    
+}
+
+.my__contac {
+    margin: 1rem;
+    display: grid;
+    text-align: center;
+    gap: 3rem;
+    
+}
+
+.img__C {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 0 auto;
+    gap: 2rem;
+    text-align: center;
+    color: var(--color__grey);
+}
+
+.img__C img {
+    background-color:#020403;
+    border-radius: 1.8rem;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.img__contact {
+    margin-left: 40px;
+    
+}
+
+.title__contac {
+    color: var(--color__white);
+    font-size: 30px;
+}
+
+.tl {
+    color: var(--color__white);
+}
+
+
+.the__destok{
+    display: none;
+}
+
+
+
+@media (min-width: 800px) {
+
+    .menu_theicon{
+        display: none;
+    }
+
+    
+    .general__container {
+        max-width: 100%;
+    } 
+
+    .the__destok {
+        display: flex;
+        justify-content: space-evenly;
+
+        
+        gap: 2rem;
+        
+        
+        padding: 0.8rem;
+    }
+
+    .the__destok a {
+        text-decoration: none;
+        color: var(--color__white);
+        
+    }
+    .your_ex {
+        text-align: start;
+    }
+
+    .your_ex p {
+        margin-left: 12rem;
+    }
+
+    .your_ex h2 {
+        text-align: center;
+    }
+
+
+    .habilitis__im {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .habilitis__im :nth-child(3){
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .habilitis__im :nth-child(5){
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .habilitis__im :nth-child(5){
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .habilitis__im :nth-child(7){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4; 
+    }
+
+
+    .img__projet {
+        display: flex;
+        gap: 4rem;
+        flex-direction: row;
+        cursor: pointer;
+        width: 180px;
+        height: 180px;
+        justify-content: center;
+        padding: 1rem;
+        
+    
+    }
+ }
+
+
+ .repository {
+    font-size: 2rem;
+    color: var(--color__black);
+ }
+
+
+ .academlo__aa {
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+ }
